@@ -1,0 +1,1 @@
+# tradingnoobs.ai
