@@ -1,35 +1,16 @@
-import React from 'react';
-import Navbar from './components/navbar';
-import './index.css';
-
+// src/App.jsx
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import StockSelectedPage from "./pages/StockSelectedPage";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <main style={styles.main}>
-        <h1>Welcome to the TradingNoobs.ai Platform!</h1>
-        <p>Scroll down to see the fixed Navbar in action.</p>
-        <div style={styles.content}>
-          {[...Array(20)].map((_, i) => (
-            <p key={i}>
-              This is some sample content. Scroll down to see the fixed Navbar.
-            </p>
-          ))}
-        </div>
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/stock_selected_page" element={<StockSelectedPage />} />
+    </Routes>
   );
 };
 
-const styles = {
-  main: {
-    paddingTop: '70px', // Add padding to avoid content being hidden behind the fixed Navbar
-  },
-  content: {
-    padding: '2rem',
-  },
-};
-
 export default App;
-

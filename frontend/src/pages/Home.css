@@ -1,0 +1,27 @@
+/* Home.css */
+
+.main {
+  padding-top: 70px; /* To avoid content behind the fixed Navbar */
+  padding: 2rem;
+}
+
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+/* The top row for 3 boxes */
+.topRow {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; /* or space-around/space-evenly as desired */
+}
+
+/* The bottom row for 2 boxes */
+.bottomRow {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly; /* or space-around/space-evenly as desired */
+}
